@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
     table.string('word').unique().notNullable();
     table.boolean('article_required').defaultTo(false);
     table.boolean('singular_only').defaultTo(false);
+    table.boolean('is_place').defaultTo(false);
     table.timestamps(true, true);
   });
 };

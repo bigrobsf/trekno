@@ -3,6 +3,7 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('word').unique().notNullable();
     table.boolean('is_particle').defaultTo(false);
+    table.boolean('is_status').defaultTo(false);
     table.timestamps(true, true);
   });
 };

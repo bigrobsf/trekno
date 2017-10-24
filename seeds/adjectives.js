@@ -49,10 +49,10 @@ var adjectives = [
   {id: 48, word: 'proton', is_particle: true},
   {id: 49, word: 'electron', is_particle: true},
   {id: 50, word: 'verteron', is_particle: true},
-  {id: 51, word: 'critical'},
-  {id: 52, word: 'nominal'},
-  {id: 53, word: 'marginal'},
-  {id: 54, word: 'in flux'}
+  {id: 51, word: 'critical', is_status: true},
+  {id: 52, word: 'nominal', is_status: true},
+  {id: 53, word: 'marginal', is_status: true},
+  {id: 54, word: 'in flux', is_status: true}
 ];
 
 exports.seed = function(knex, Promise) {
